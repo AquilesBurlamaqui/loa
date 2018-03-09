@@ -1,0 +1,15 @@
+<script>
+  /*
+  [L3-Q5] Implemente um programa que recebe vários números inteiros, conta quantos são múltiplos de 3 ou de 7 e imprime a quantidade na saída.
+  O programa deve encerrar quando recebe o número 0.
+  */
+  var num, result="",cont=0;
+  num=prompt("entre com numero");
+  while(num!=0) {
+      if(num%3==0 || num%7==0) {
+          cont++; 
+      }
+      num=prompt("entre com numero");
+  }
+  alert(cont);
+</script>

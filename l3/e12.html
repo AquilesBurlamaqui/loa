@@ -1,0 +1,22 @@
+<script>
+  alert(1%6);
+  var num,cont=1,ehPrimo=0;
+  num = prompt("Numero ");
+
+  while(cont<=num) {
+     console.log(cont+" % "+num+" = "+cont%num);
+      if( (cont%num)==0) {
+         ehPrimo++;
+         console.log(ehPrimo);
+      }
+      cont++; 
+  }
+  if(num==1) {
+      ehPrimo++;
+  }
+
+  if(ehPrimo==2)
+    alert("Eh primo");
+  else
+      alert("Nao eh primo");
+</script>

@@ -1,0 +1,14 @@
+<script>
+/*
+  [L3-Q3] Implemente um programa que recebe números reais positivos e imprime na saída as raízes quadradas dos números maiores que 15,
+    separadas por espaços. O programa deve parar quando for recebido o número -4.
+    */
+  var num, resultado="";
+  num = prompt("Entre com um numero");
+  while(num!=-4) {
+      if(num>15)
+         resultado=resultado+" "+Math.sqrt(num);
+      num = prompt("Entre com um numero");
+  }
+  alert(resultado);
+</script>

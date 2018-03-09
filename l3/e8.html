@@ -1,0 +1,15 @@
+<script>
+/*
+Considere duas cidades, A e B. A cidade A tem um crescimento populacional de 3,5% ao ano, 
+enquanto a população da cidade B cresce 1% ao ano. Implemente um programa que recebe 2 valores inteiros que representam a população da cidade A e da cidade B, e calcula em quantos anos a população da cidade A será maior ou igual que a população da cidade B. Considere que o valor recebido para a cidade A será sempre menor que o valor para a cidade B.
+*/
+  var cidA,cidB, anos=0;
+cidA = parseInt(prompt("Cidade A"));
+cidB = parseInt(prompt("Cidade B"));
+while(cidA<cidB) {
+    cidA=cidA*1.035;
+    cidB=cidB*1.01;
+    anos++;
+}
+alert(anos);
+</script>

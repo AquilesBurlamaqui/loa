@@ -1,0 +1,16 @@
+<script>
+	var nome, salarioAtual, salReajustado;
+	nome = prompt("Entre com o nome");
+	salarioAtual = parseFloat(prompt("Salario atual"));
+	if(salarioAtual <= 1000) { 
+	   salReajustado = salarioAtual*1.2;
+	} else {
+	   if(salarioAtual>1000 && salarioAtual<=5000) {
+	      salReajustado = salarioAtual*1.1;
+	   } else {
+	      salReajustado = salarioAtual
+           }
+	}
+	alert("Nome:"+nome+" \nSalario atual:"+salarioAtual+" \nSalario reajustado:"+salReajustado);	
+
+</script>

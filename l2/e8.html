@@ -1,0 +1,33 @@
+<script>
+  /* Escreva um algoritmo que leia o número equivalente a um mês do ano e diga se
+é do primeiro, segundo ou terceiro bimestre. Se não for de do primeiro semestres,
+exiba a mensagem: “Segundo semestre.”. Caso o mês inserido seja maior
+que 12 exibir a mensagem: “O mês inserido não existe”. Veja a Tabela abaixo
+para alguns exemplos de entradas e saídas:
+Entrada: n° do
+mês
+Saída:
+1 Primeiro bimestre.
+4 Segundo Bimestre.
+5 Terceiro Bimestre.
+6 Terceiro Bimestre.
+12 Segundo Semestre.
+13 O mês inserido não existe.
+*/
+  var mes = parseInt(prompt("Entre com o mes"));
+  if(mes>=1 && mes <=2) 
+      alert("Primeiro Bimestre");
+  else 
+    if(mes>=3 && mes <=4) 
+      alert("Segundo Bimestre");
+    else
+      if(mes>=5 && mes <=6) 
+        alert("Terceiro Bimestre");
+      else 
+        if(mes>=7 && mes <=12) 
+          alert("Segundo Semestre");
+         else
+           alert("O mês inserido não existe");
+  
+  
+</script>
